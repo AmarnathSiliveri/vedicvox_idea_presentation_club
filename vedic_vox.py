@@ -170,7 +170,7 @@ if app == "Membership":
         # add a google form link
 
         with st.popover("Membership Terms and Conditions", help="Click to view Membership Terms and Conditions"):
-                st.markdown(
+            st.markdown(
                 """
                 <div>
                     <p>1. Membership Eligibility:</p>
@@ -213,7 +213,7 @@ if app == "Membership":
                 </div>
                 """,
                 unsafe_allow_html=True
-            )
+            ) 
             st.checkbox("I agree to the terms and conditions")
 
 
