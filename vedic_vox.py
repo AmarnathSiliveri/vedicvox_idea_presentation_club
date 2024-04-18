@@ -165,68 +165,130 @@ if app == "Membership":
         # Membership Registration Form
         st.markdown("## How to Join")
         st.write("To become a member of Vedic Vox, please fill out the registration form below:")
-        name = st.text_input("Full Name")
-        email = st.text_input("Email Address")
-        # add a google form link
-
-        with st.popover("Membership Terms and Conditions", help="Click to view Membership Terms and Conditions"):
-            st.markdown(
-                """
-                <div>
-                    <p>1. Membership Eligibility:</p>
-                    <ul>
-                        <li>Membership in Vedic Vox is open to all current students of [Institution Name].</li>
-                        <li>Individuals must agree to abide by the club's rules and regulations.</li>
-                    </ul>
-                    <p>2. Membership Duration:</p>
-                    <ul>
-                        <li>Membership is valid for one academic semester.</li>
-                        <li>Memberships may be renewed at the beginning of each semester upon payment of membership fees.</li>
-                    </ul>
-                    <p>3. Membership Fees:</p>
-                    <ul>
-                        <li>Membership fees are $50 per semester and are non-refundable.</li>
-                        <li>Fees must be paid in full at the time of registration.</li>
-                    </ul>
-                    <p>4. Rights and Responsibilities:</p>
-                    <ul>
-                        <li>Members have the right to participate in all club activities and events.</li>
-                        <li>Members are expected to conduct themselves in a respectful and professional manner at all times.</li>
-                        <li>Members must adhere to the club's code of conduct and respect the opinions and contributions of others.</li>
-                    </ul>
-                    <p>5. Termination of Membership:</p>
-                    <ul>
-                        <li>Membership may be terminated at the discretion of the club leadership for violations of the club's rules and regulations.</li>
-                        <li>Members who violate the club's code of conduct may be subject to disciplinary action, up to and including expulsion from the club.</li>
-                    </ul>
-                    <p>6. Privacy Policy:</p>
-                    <ul>
-                        <li>Vedic Vox respects the privacy of its members and will not share personal information with third parties without consent.</li>
-                        <li>Members' contact information will be used solely for club-related communications and activities.</li>
-                    </ul>
-                    <p>7. Amendments to Terms and Conditions:</p>
-                    <ul>
-                        <li>These terms and conditions are subject to change at the discretion of the club leadership.</li>
-                        <li>Members will be notified of any changes to the terms and conditions via email or other communication channels.</li>
-                    </ul>
-                    <p>By registering as a member of Vedic Vox, individuals acknowledge that they have read and understood the above terms and conditions and agree to abide by them.</p>
-                </div>
-                """,
-                unsafe_allow_html=True
-            ) 
-            st.checkbox("I agree to the terms and conditions")
-
-
-
-     
 
         # Display Membership Fees
         st.markdown("## Membership Fees")
         st.write("Membership fees: ₹200 per semester")
 
         # Submit Button
-        if st.button("Join Now"):
-            st.write("Thank you for joining Vedic Vox!")
+    
+
+        with st.expander("Membership Terms and Conditions"):
+                st.markdown(
+                    """
+                    <div>
+                        <p>1. Membership Eligibility:</p>
+                        <ul>
+                            <li>Membership in Vedic Vox is open to all current students of [Institution Name].</li>
+                            <li>Individuals must agree to abide by the club's rules and regulations.</li>
+                        </ul>
+                        <p>2. Membership Duration:</p>
+                        <ul>
+                            <li>Membership is valid for one academic semester.</li>
+                            <li>Memberships may be renewed at the beginning of each semester upon payment of membership fees.</li>
+                        </ul>
+                        <p>3. Membership Fees:</p>
+                        <ul>
+                            <li>Membership fees are $50 per semester and are non-refundable.</li>
+                            <li>Fees must be paid in full at the time of registration.</li>
+                        </ul>
+                        <p>4. Rights and Responsibilities:</p>
+                        <ul>
+                            <li>Members have the right to participate in all club activities and events.</li>
+                            <li>Members are expected to conduct themselves in a respectful and professional manner at all times.</li>
+                            <li>Members must adhere to the club's code of conduct and respect the opinions and contributions of others.</li>
+                        </ul>
+                        <p>5. Termination of Membership:</p>
+                        <ul>
+                            <li>Membership may be terminated at the discretion of the club leadership for violations of the club's rules and regulations.</li>
+                            <li>Members who violate the club's code of conduct may be subject to disciplinary action, up to and including expulsion from the club.</li>
+                        </ul>
+                        <p>6. Privacy Policy:</p>
+                        <ul>
+                            <li>Vedic Vox respects the privacy of its members and will not share personal information with third parties without consent.</li>
+                            <li>Members' contact information will be used solely for club-related communications and activities.</li>
+                        </ul>
+                        <p>7. Amendments to Terms and Conditions:</p>
+                        <ul>
+                            <li>These terms and conditions are subject to change at the discretion of the club leadership.</li>
+                            <li>Members will be notified of any changes to the terms and conditions via email or other communication channels.</li>
+                        </ul>
+                        <p>By registering as a member of Vedic Vox, individuals acknowledge that they have read and understood the above terms and conditions and agree to abide by them.</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                ) 
+
+                k=st.checkbox("I agree to the terms and conditions")
+                if k and st.button("JOIN THE CLUB 🚀"):
+                        st.write(" ")
+                        st.balloons()
+                        st.markdown("# [Membership Form](https://forms.gle/mEwzZbiKX9hvy6638)")
+if app == "Contact":
+        # Contact Information
+    st.markdown("## Contact Us")
+    st.write("For inquiries or feedback, feel free to reach out to us via the following channels:")
+    st.markdown("- Email: amarnath18215@gmail.com")
+    st.markdown("- Phone (Amarnath): +91 7207249048")
+    st.markdown("- Phone (Deekshitha): +91 9440388230")
+    st.markdown("- Address:Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501 ")
+    c=st.columns(4)
+   # Define your styles
+    with c[0]:
+        st.markdown("""
+        <style>
+            .social-icons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .social-icon {
+                text-align: center;
+            }
+        </style>
+            """, unsafe_allow_html=True)
+
+            # Create a container for social icons
+        st.markdown("""
+
+
+            <div class="social-icon">
+                <a href="https://www.instagram.com/vedic_vox.ds?igsh=MWhka2FvcnJqanNqYQ==" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" alt="Instagram" />
+                </a>
+                <p>Instagram</p>
+            </div>
+                    <br>
+
+            <div class="social-icon">
+                <a href="mailto:amarnathsiliveri" target="_blank" rel="noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/128/9068/9068642.png" width="32" height="32" alt="Mail" />
+                </a>
+                <p>Gmail</p>
+            </div> 
+                    <br>
+            <div class="social-icon">
+                <a href="https://wa.me/7207249048" target="_blank" rel="noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="32" height="32" alt="WhatsApp" />
+                </a>
+                <p>WhatsApp</p>
+            </div> 
+            """, unsafe_allow_html=True)
+
+
+
+     
+
+
+
+
+     
+
+
+
+      
 
             
 
