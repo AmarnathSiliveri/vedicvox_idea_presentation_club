@@ -127,16 +127,17 @@ if app == "About":
             st.markdown('''
                     ## CORE MEMBERS and LEADERSHIP TEAM
 
-                    Vedic Vox is being lead by  by <font color=#41C9E2> AMARNATH SILIVERI</font>, <font color=#41C9E2>SAI DEEKSHITHA ANDRA </font>, and [Advisor's Name]. 
+                    Vedic Vox is being lead by  by <font color=#41C9E2> AMARNATH SILIVERI</font>, <font color=#41C9E2>SAI DEEKSHITHA ANDRA </font>
 
                     > **AMARNATH SILIVERI**: A passionate person for idea sharing with a background in Data Science and tools to get insights from data.
                         
-                    > **SAI DEEKSHITHA ANDRA**: Brings expertise in [specific area].
+                    > **SAI DEEKSHITHA ANDRA**: Brings expertise in organising events and sessions on idea -presentation
                         
-                    > **Advisor's Name**: Provides guidance based on their experience in [related field].
+                    
 
                     ### Together, they lead the club with dedication and enthusiasm.
-                    ''',unsafe_allow_html=True)            
+                    ''',unsafe_allow_html=True) 
+            # > **Advisor's Name**: Provides guidance based on their experience in [related field].           
 if app == "Events":
     st.markdown(""" 
                     # will be disclosed soon 😁""",unsafe_allow_html=True)
@@ -234,12 +235,11 @@ if app == "Contact":
     st.markdown("- Address:Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501 ")
     c=st.columns(4)
    # Define your styles
-    with c[0]:
-        st.markdown("""
+
+    st.markdown("""
         <style>
             .social-icons {
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 gap: 20px;
             }
@@ -248,34 +248,36 @@ if app == "Contact":
                 text-align: center;
             }
         </style>
-            """, unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
-            # Create a container for social icons
-        st.markdown("""
-
-
+    # Create a container for social icons
+    st.markdown("""
+        <div class="social-icons">
             <div class="social-icon">
                 <a href="https://www.instagram.com/vedic_vox.ds?igsh=MWhka2FvcnJqanNqYQ==" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" alt="Instagram" />
+                    <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" width="32" height="32" alt="Instagram" />
                 </a>
                 <p>Instagram</p>
             </div>
-                    <br>
-
+        </div>   
+        <div class="social-icons">
             <div class="social-icon">
                 <a href="mailto:amarnathsiliveri" target="_blank" rel="noreferrer">
                     <img src="https://cdn-icons-png.flaticon.com/128/9068/9068642.png" width="32" height="32" alt="Mail" />
                 </a>
                 <p>Gmail</p>
-            </div> 
-                    <br>
+            </div>
+        </div>
+        <div class="social-icons">
             <div class="social-icon">
-                <a href="https://wa.me/7207249048" target="_blank" rel="noreferrer">
+                <a href="https://chat.whatsapp.com/C7giSBe1Ex10l4wca5TMwd" target="_blank" rel="noreferrer">
                     <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="32" height="32" alt="WhatsApp" />
                 </a>
                 <p>WhatsApp</p>
-            </div> 
-            """, unsafe_allow_html=True)
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
 
 
 
