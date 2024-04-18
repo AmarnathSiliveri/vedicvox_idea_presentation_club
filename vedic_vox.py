@@ -257,7 +257,7 @@ if app == "Contact":
 
 
             <div class="social-icon">
-                <a href="http://www.instagram.com/itz..amar." target="_blank" rel="noreferrer">
+                <a href="https://www.instagram.com/vedic_vox.ds?igsh=MWhka2FvcnJqanNqYQ==" target="_blank" rel="noreferrer">
                 <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" alt="Instagram" />
                 </a>
                 <p>Instagram</p>
