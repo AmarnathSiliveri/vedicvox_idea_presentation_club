@@ -74,7 +74,7 @@ if app == "About":
         tab1,tab2,tab3=st.tabs(["Mission and Vision of club "," Club Activities ","   CLUB LEADS "])
         with tab1:
             st.markdown(""" 
-                        <h1 style='color:white ;'>Mission and Vision of the Club</h1>
+                        <h1 style='color:white ;'>Mission and Vision of the Club 🎯</h1>
                     """,unsafe_allow_html=True)
             st.write('''Our mission and vision encapsulate our unwavering dedication to nurturing a vibrant community driven by creativity, innovation, and personal growth. 
                       Here's a glimpse into our mission and vision
@@ -109,18 +109,19 @@ if app == "About":
                         <span class="custom-ifont">Through our mission and vision, <font color =yellow> __Vedic Vox__</font> endeavors to inspire individuals to embrace the boundless depths of their creativity, to unlock the latent potential within, and to harness the transformative power of ideas. Together, we believe in crafting a future that shines with the brilliance of collective ingenuity—<font color = tangerine> ___ONE IDEA, ONE STEP, at a time.___</font>
                         </span>""",unsafe_allow_html=True)
         with tab2:
-            with st.expander("Idea Presentation Sessions"):
-                st.markdown(""" <font color =yellow>At __Vedic Vox__</font>, we organize regular idea presentation sessions where students have the opportunity to practice articulating their thoughts and ideas. These sessions provide a supportive environment for students to share their creative concepts and receive constructive feedback from peers. By participating in these sessions, students can enhance their <font color =yellow>__public speaking skills__</font>,<font color =yellow>  __build confidence__ </font> in expressing their ideas, and refine their <font color =yellow> __presentation techniques.__</font>
-                """,unsafe_allow_html=True)
-            with st.expander("Workshops on Entrepreneurship and Innovation"):
-                st.markdown(""" Our club hosts workshops focused on <font color= orange> entrepreneurship and innovation</font>, providing students with practical skills and knowledge to turn their ideas into reality. <font>Through interactive sessions led by ___"industry experts"___ and  ___"seasoned entrepreneurs"___, students learn about the   ___"entrepreneurial mindset"___, startup development process, </font>and strategies for <font color =orange >___Turning innovative ideas into successful ventures___</font>. These workshops not only inspire students to think creatively but also equip them with the tools and resources needed to pursue entrepreneurial endeavors""",unsafe_allow_html=True)
-
-            with st.expander("Guest Lectures"):
-                st.markdown('''<font>We regularly invite guest speakers from various fields, including  <font color =tangerine >__"business"__,  __"technology"__, and __"academia"__</font>, to share their insights and experiences with our members.<font color= tangerine> These guest lectures provide valuable exposure to diverse perspectives and real-world examples of successful idea implementation.</font> By attending these lectures, students gain new insights, broaden their horizons, and cultivate a deeper understanding of the    __"challenges"__ and __"opportunities"__ in their areas of interest. </font>''', unsafe_allow_html=True)
-               
-
-            with st.expander("Collaborative Projects"):
-                st.markdown('''<font color= red > __Vedic Vox__</font> facilitates collaborative projects where students can work together to explore innovative ideas and solutions to real-world problems. <font color =red>_Through teamwork and collaboration, students learn to leverage their collective strengths, brainstorm creative solutions, and execute projects effectively_</font>. These collaborative experiences not only foster critical thinking and problem-solving skills but also promote <font color= red>teamwork</font>, <font color= red>communication</font>, and <font color= red>leadership abilities</font>.''',unsafe_allow_html=True)
+            cols1=st.columns(2)
+            with cols1[0]:
+                with st.expander(" 💡📜 Idea Presentation Sessions "):
+                    st.markdown(""" <font color =yellow>At __Vedic Vox__</font>, we organize regular idea presentation sessions where students have the opportunity to practice articulating their thoughts and ideas. These sessions provide a supportive environment for students to share their creative concepts and receive constructive feedback from peers. By participating in these sessions, students can enhance their <font color =yellow>__public speaking skills__</font>,<font color =yellow>  __build confidence__ </font> in expressing their ideas, and refine their <font color =yellow> __presentation techniques.__</font>
+                    """,unsafe_allow_html=True)
+                with st.expander("🤖🧪🔭 Workshops on Entrepreneurship and Innovation"):
+                    st.markdown(""" Our club hosts workshops focused on <font color= orange> entrepreneurship and innovation</font>, providing students with practical skills and knowledge to turn their ideas into reality. <font>Through interactive sessions led by ___"industry experts"___ and  ___"seasoned entrepreneurs"___, students learn about the   ___"entrepreneurial mindset"___, startup development process, </font>and strategies for <font color =orange >___Turning innovative ideas into successful ventures___</font>. These workshops not only inspire students to think creatively but also equip them with the tools and resources needed to pursue entrepreneurial endeavors""",unsafe_allow_html=True)
+            with cols1[1]:
+                with st.expander(" 🧑‍🏫 Guest Lectures "):
+                    st.markdown('''<font>We regularly invite guest speakers from various fields, including  <font color =tangerine >__"business"__,  __"technology"__, and __"academia"__</font>, to share their insights and experiences with our members.<font color= tangerine> These guest lectures provide valuable exposure to diverse perspectives and real-world examples of successful idea implementation.</font> By attending these lectures, students gain new insights, broaden their horizons, and cultivate a deeper understanding of the    __"challenges"__ and __"opportunities"__ in their areas of interest. </font>''', unsafe_allow_html=True)
+                
+                with st.expander(" 🤝 📂Collaborative Projects"):
+                    st.markdown('''<font color= red > __Vedic Vox__</font> facilitates collaborative projects where students can work together to explore innovative ideas and solutions to real-world problems. <font color =red>_Through teamwork and collaboration, students learn to leverage their collective strengths, brainstorm creative solutions, and execute projects effectively_</font>. These collaborative experiences not only foster critical thinking and problem-solving skills but also promote <font color= red>teamwork</font>, <font color= red>communication</font>, and <font color= red>leadership abilities</font>.''',unsafe_allow_html=True)
             
         with tab3:
             st.markdown('''
@@ -136,3 +137,99 @@ if app == "About":
 
                     ### Together, they lead the club with dedication and enthusiasm.
                     ''',unsafe_allow_html=True)            
+if app == "Events":
+    st.markdown(""" 
+                    # will be disclosed soon 😁""",unsafe_allow_html=True)
+
+if app == "Resources":
+    st.markdown(""" 
+                    # will be disclosed soon 😁""",unsafe_allow_html=True)
+
+if app == "Membership":
+    # Membership Benefits
+        st.markdown("## Membership Benefits")
+        st.write("As a member of Vedic Vox, you unlock a world of opportunities and resources to enhance your personal and professional growth. Here are some of the benefits you'll enjoy:")
+
+        # Display Membership Perks
+        st.markdown("- Access to Exclusive Events")
+        st.markdown("- Workshop Discounts")
+        st.markdown("- Mentorship Program")
+        st.markdown("- Resource Library Access")
+        st.markdown("- Networking Opportunities")
+        st.markdown("- Resume Building")
+        st.markdown("- Certificate of Membership")
+        st.markdown("- Collaborative Projects")
+        st.markdown("- Professional Development Workshops")
+        st.markdown("- Leadership Opportunities")
+
+        # Membership Registration Form
+        st.markdown("## How to Join")
+        st.write("To become a member of Vedic Vox, please fill out the registration form below:")
+        name = st.text_input("Full Name")
+        email = st.text_input("Email Address")
+        # add a google form link
+
+        with st.popover("Membership Terms and Conditions", help="Click to view Membership Terms and Conditions"):
+                st.markdown(
+                """
+                <div>
+                    <p>1. Membership Eligibility:</p>
+                    <ul>
+                        <li>Membership in Vedic Vox is open to all current students of [Institution Name].</li>
+                        <li>Individuals must agree to abide by the club's rules and regulations.</li>
+                    </ul>
+                    <p>2. Membership Duration:</p>
+                    <ul>
+                        <li>Membership is valid for one academic semester.</li>
+                        <li>Memberships may be renewed at the beginning of each semester upon payment of membership fees.</li>
+                    </ul>
+                    <p>3. Membership Fees:</p>
+                    <ul>
+                        <li>Membership fees are $50 per semester and are non-refundable.</li>
+                        <li>Fees must be paid in full at the time of registration.</li>
+                    </ul>
+                    <p>4. Rights and Responsibilities:</p>
+                    <ul>
+                        <li>Members have the right to participate in all club activities and events.</li>
+                        <li>Members are expected to conduct themselves in a respectful and professional manner at all times.</li>
+                        <li>Members must adhere to the club's code of conduct and respect the opinions and contributions of others.</li>
+                    </ul>
+                    <p>5. Termination of Membership:</p>
+                    <ul>
+                        <li>Membership may be terminated at the discretion of the club leadership for violations of the club's rules and regulations.</li>
+                        <li>Members who violate the club's code of conduct may be subject to disciplinary action, up to and including expulsion from the club.</li>
+                    </ul>
+                    <p>6. Privacy Policy:</p>
+                    <ul>
+                        <li>Vedic Vox respects the privacy of its members and will not share personal information with third parties without consent.</li>
+                        <li>Members' contact information will be used solely for club-related communications and activities.</li>
+                    </ul>
+                    <p>7. Amendments to Terms and Conditions:</p>
+                    <ul>
+                        <li>These terms and conditions are subject to change at the discretion of the club leadership.</li>
+                        <li>Members will be notified of any changes to the terms and conditions via email or other communication channels.</li>
+                    </ul>
+                    <p>By registering as a member of Vedic Vox, individuals acknowledge that they have read and understood the above terms and conditions and agree to abide by them.</p>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+            st.checkbox("I agree to the terms and conditions")
+
+
+
+     
+
+        # Display Membership Fees
+        st.markdown("## Membership Fees")
+        st.write("Membership fees: ₹200 per semester")
+
+        # Submit Button
+        if st.button("Join Now"):
+            st.write("Thank you for joining Vedic Vox!")
+
+            
+
+          
+
+
