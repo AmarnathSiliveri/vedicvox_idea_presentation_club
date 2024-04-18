@@ -233,50 +233,56 @@ if app == "Contact":
     st.markdown("- Phone (Amarnath): +91 7207249048")
     st.markdown("- Phone (Deekshitha): +91 9440388230")
     st.markdown("- Address:Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501 ")
-    c=st.columns(4)
-   # Define your styles
 
+
+    # Define your styles
     st.markdown("""
-        <style>
-            .social-icons {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-            }
+    <style>
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
-            .social-icon {
-                text-align: center;
-            }
-        </style>
+    .social-icon {
+        text-align: center;
+    }
+    </style>
     """, unsafe_allow_html=True)
 
-    # Create a container for social icons
+# Create a container for social icons
     st.markdown("""
-        <div class="social-icons">
+            <div class="social-icons">
+
+
             <div class="social-icon">
-                <a href="https://www.instagram.com/vedic_vox.ds?igsh=MWhka2FvcnJqanNqYQ==" target="_blank" rel="noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" width="32" height="32" alt="Instagram" />
+                <a href="http://www.instagram.com/itz..amar." target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" alt="Instagram" />
                 </a>
                 <p>Instagram</p>
             </div>
-        </div>   
-        <div class="social-icons">
-            <div class="social-icon">
-                <a href="mailto:amarnathsiliveri" target="_blank" rel="noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/128/9068/9068642.png" width="32" height="32" alt="Mail" />
-                </a>
-                <p>Gmail</p>
-            </div>
-        </div>
-        <div class="social-icons">
+                <br>
+
             <div class="social-icon">
                 <a href="https://chat.whatsapp.com/C7giSBe1Ex10l4wca5TMwd" target="_blank" rel="noreferrer">
-                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="32" height="32" alt="WhatsApp" />
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="32" height="32" alt="WhatsApp" />
                 </a>
                 <p>WhatsApp</p>
             </div>
-        </div>
-    """, unsafe_allow_html=True)
+                <br>
+
+            <div class="social-icon">
+                <a href="mailto:amarnathsiliveri" target="_blank" rel="noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/128/9068/9068642.png" width="32" height="32" alt="Mail" />
+                </a>
+                <p>Mail</p>
+            </div>
+
+            </div>
+            """, unsafe_allow_html=True)
+
+       
 
 
 
