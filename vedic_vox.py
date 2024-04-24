@@ -282,7 +282,7 @@ if app == "Contact":
             </div>
             """, unsafe_allow_html=True)
 # hide the app icon and header red
- hide_st_style= """
+hide_st_style= """
        <style>
        #mainmenu {visibility:hidden;}
        footer {visibility:hidden;}
