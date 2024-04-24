@@ -6,7 +6,7 @@ import time
 st.set_page_config(page_title="VEDIC VOX",layout="centered",page_icon="🚀")
 
 
-img_contact_form = Image.open(r"E:\ideation-vedicvox(sozoconnect)\vedicvoxbg.png")
+img_contact_form = Image.open("vedicvoxbg.png")
 # Club logo
 
 # Navigation bar
