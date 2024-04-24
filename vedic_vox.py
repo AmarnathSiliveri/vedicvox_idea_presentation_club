@@ -226,17 +226,53 @@ if app == "Membership":
                         st.balloons()
                         st.markdown("# [Membership Form](https://forms.gle/mEwzZbiKX9hvy6638)")
 if app == "Contact":
-        # Contact Information
-    st.markdown("## Contact Us")
-    st.write("For inquiries or feedback, feel free to reach out to us via the following channels:")
-    st.markdown("- Email: amarnath18215@gmail.com")
-    st.markdown("- Phone (Amarnath): +91 7207249048")
-    st.markdown("- Phone (Deekshitha): +91 9440388230")
-    st.markdown("- Address:Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501 ")
+        st.markdown("""
+            <style>
+            .contact-section {
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+                margin-bottom: 20px;
+            }
+
+            .contact-heading {
+                font-size: 24px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .contact-info {
+                font-size: 18px;
+                color: #666;
+                margin-bottom: 10px;
+            }
+
+            .contact-info a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
+            </style>
+            """, unsafe_allow_html=True)
+
+        st.markdown("<div class='contact-section'>", unsafe_allow_html=True)
+        st.markdown("<div class='contact-heading'>Contact Us</div>", unsafe_allow_html=True)
+        st.write("For inquiries or feedback, feel free to reach out to us via the following channels:")
+        st.markdown("<div class='contact-info'>", unsafe_allow_html=True)
+        st.markdown("- Email: <a href='mailto:VedicVox.ds@rgmcet.edu.in'>VedicVox.ds@rgmcet.edu.in</a>", unsafe_allow_html=True)
+        st.markdown("- Phone (Amarnath): <a href='tel:+917207249048'>+91 7207249048</a>", unsafe_allow_html=True)
+        st.markdown("- Phone (Deekshitha): <a href='tel:+919440388230'>+91 9440388230</a>", unsafe_allow_html=True)
+        st.markdown("- Address: Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501", unsafe_allow_html=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+        st.markdown("</div>", unsafe_allow_html=True)
 
 
     # Define your styles
-    st.markdown("""
+        st.markdown("""
     <style>
     .social-icons {
         display: flex;
@@ -252,7 +288,7 @@ if app == "Contact":
     """, unsafe_allow_html=True)
 
 # Create a container for social icons
-    st.markdown("""
+        st.markdown("""
             <div class="social-icons">
 
 
@@ -273,7 +309,7 @@ if app == "Contact":
                 <br>
 
             <div class="social-icon">
-                <a href="mailto:amarnathsiliveri" target="_blank" rel="noreferrer">
+                <a href="mailto:VedicVox.ds@rgmcet.edu.in" target="_blank" rel="noreferrer">
                 <img src="https://cdn-icons-png.flaticon.com/128/9068/9068642.png" width="32" height="32" alt="Mail" />
                 </a>
                 <p>Mail</p>
@@ -281,9 +317,40 @@ if app == "Contact":
 
             </div>
             """, unsafe_allow_html=True)
+    
+            #adding responsive map
+        st.markdown("""
+                <style>
+                .google-map {
+                padding-bottom: 50%;
+                position: relative;
+            }
 
-       
+            .google-map iframe {
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+                </style>
+                """, unsafe_allow_html=True)
+        st.markdown(
+        """<div class="google-map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.626290194635!2d78.37430737601228!3d15.504521085096089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5b49bf7e231ed%3A0xf209159e6bde969c!2sRajeev%20Gandhi%20Memorial%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1713966806295!5m2!1sen!2sin&maptype=terrain" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        """,unsafe_allow_html=True
+    )
+           
 
+hide_st_style= """
+       <style>
+       #mainmenu {visibility:hidden;}
+       footer {visibility:hidden;}
+       header {visibility:hidden;}
+       </style>
+ """
+st.markdown(hide_st_style,unsafe_allow_html=True)
 
 
 
