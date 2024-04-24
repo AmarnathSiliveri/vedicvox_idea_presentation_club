@@ -226,6 +226,8 @@ if app == "Membership":
                         st.balloons()
                         st.markdown("# [Membership Form](https://forms.gle/mEwzZbiKX9hvy6638)")
 if app == "Contact":
+       
+
         st.markdown("""
             <style>
             .contact-section {
@@ -257,11 +259,10 @@ if app == "Contact":
                 text-decoration: underline;
             }
             </style>
-            """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
 
         st.markdown("<div class='contact-section'>", unsafe_allow_html=True)
         st.markdown("<div class='contact-heading'>Contact Us</div>", unsafe_allow_html=True)
-        st.write("For inquiries or feedback, feel free to reach out to us via the following channels:")
         st.markdown("<div class='contact-info'>", unsafe_allow_html=True)
         st.markdown("- Email: <a href='mailto:VedicVox.ds@rgmcet.edu.in'>VedicVox.ds@rgmcet.edu.in</a>", unsafe_allow_html=True)
         st.markdown("- Phone (Amarnath): <a href='tel:+917207249048'>+91 7207249048</a>", unsafe_allow_html=True)
@@ -269,6 +270,7 @@ if app == "Contact":
         st.markdown("- Address: Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
+
 
 
     # Define your styles
