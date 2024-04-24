@@ -227,77 +227,77 @@ if app == "Membership":
                         st.markdown("# [Membership Form](https://forms.gle/mEwzZbiKX9hvy6638)")
 if app == "Contact":
         st.markdown("""
-        <style>
-        .contact-heading {
-            color: white;
-            font-size: 28px;
-            text-align: center;
-            padding: 10px;
-            background-color: navyblue;
-        }
+            <style>
+            .contact-heading {
+                color: white;
+                font-size: 28px;
+                text-align: center;
+                padding: 10px;
+                background-color: navyblue;
+            }
 
-        .contact-section {
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            margin-bottom: 20px;
-        }
+            .contact-section {
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+                margin-bottom: 20px;
+            }
 
-        .contact-info {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 10px;
-        }
+            .contact-info {
+                font-size: 18px;
+                color: #666;
+                margin-bottom: 10px;
+            }
 
-        .contact-info a {
-            color: #007bff;
-            text-decoration: none;
-        }
+            .contact-info a {
+                color: #007bff;
+                text-decoration: none;
+            }
 
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
 
-        .social-icons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
+            .social-icons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
 
-        .social-icon {
-            text-align: center;
-        }
+            .social-icon {
+                text-align: center;
+            }
 
-        .google-map {
-            padding-bottom: 50%;
-            position: relative;
-        }
+            .google-map {
+                padding-bottom: 50%;
+                position: relative;
+            }
 
-        .google-map iframe {
-            height: 100%;
-            width: 100%;
-            left: 0;
-            top: 0;
-            position: absolute;
-        }
-        </style>
-    """, unsafe_allow_html=True)
+            .google-map iframe {
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+            </style>
+        """, unsafe_allow_html=True)
 
-    # Contact Us section
-    contact_info = """
-    <div class='contact-heading'>Contact Us</div>
-    <div class='contact-section'>
-        <div class='contact-info'>
-            - Email: <a href='mailto:VedicVox.ds@rgmcet.edu.in'>VedicVox.ds@rgmcet.edu.in</a><br>
-            - Phone (Amarnath): <a href='tel:+917207249048'>+91 7207249048</a><br>
-            - Phone (Deekshitha): <a href='tel:+919440388230'>+91 9440388230</a><br>
-            - Address: Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501
+        # Contact Us section
+        contact_info = """
+        <div class='contact-heading'>Contact Us</div>
+        <div class='contact-section'>
+            <div class='contact-info'>
+                - Email: <a href='mailto:VedicVox.ds@rgmcet.edu.in'>VedicVox.ds@rgmcet.edu.in</a><br>
+                - Phone (Amarnath): <a href='tel:+917207249048'>+91 7207249048</a><br>
+                - Phone (Deekshitha): <a href='tel:+919440388230'>+91 9440388230</a><br>
+                - Address: Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501
+            </div>
         </div>
-    </div>
-    """
-    st.markdown(contact_info, unsafe_allow_html=True)
+        """
+        st.markdown(contact_info, unsafe_allow_html=True)
 
      
 
