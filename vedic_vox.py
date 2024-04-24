@@ -229,8 +229,8 @@ if app == "Contact":
         # Contact Information
     st.markdown("## Contact Us")
     st.write("For inquiries or feedback, feel free to reach out to us via the following channels:")
-    st.markdown("- Email: amarnath18215@gmail.com")
-    st.markdown("- Phone (Amarnath): +91 7207249048")
+    st.markdown("- Email: VedicVox.ds@rgmcet.edu.in")
+    st.markdown("- phone (Amarnath): +91 7207249048")
     st.markdown("- Phone (Deekshitha): +91 9440388230")
     st.markdown("- Address:Nerawada 'X' Roads, Nandyal, Andhra Pradesh 518501 ")
 
