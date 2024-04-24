@@ -226,8 +226,9 @@ if app == "Membership":
                         st.balloons()
                         st.markdown("# [Membership Form](https://forms.gle/mEwzZbiKX9hvy6638)")
 if app == "Contact":
-       
+     
 
+        # Define styles for the contact section
         st.markdown("""
             <style>
             .contact-section {
@@ -261,6 +262,7 @@ if app == "Contact":
             </style>
         """, unsafe_allow_html=True)
 
+        # Contact Us section
         st.markdown("<div class='contact-section'>", unsafe_allow_html=True)
         st.markdown("<div class='contact-heading'>Contact Us</div>", unsafe_allow_html=True)
         st.markdown("<div class='contact-info'>", unsafe_allow_html=True)
@@ -271,59 +273,57 @@ if app == "Contact":
         st.markdown("</div>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
-
-
-    # Define your styles
+        # Define styles for social icons
         st.markdown("""
-    <style>
-    .social-icons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
+            <style>
+            .social-icons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
 
-    .social-icon {
-        text-align: center;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+            .social-icon {
+                text-align: center;
+            }
+            </style>
+        """, unsafe_allow_html=True)
 
-# Create a container for social icons
+        # Social icons section
+        st.markdown("<div class='social-icons'>", unsafe_allow_html=True)
         st.markdown("""
-            <div class="social-icons">
-
-
             <div class="social-icon">
                 <a href="http://www.instagram.com/itz..amar." target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" alt="Instagram" />
+                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" alt="Instagram" />
                 </a>
                 <p>Instagram</p>
             </div>
-                <br>
+        """, unsafe_allow_html=True)
 
+        st.markdown("""
             <div class="social-icon">
                 <a href="https://chat.whatsapp.com/C7giSBe1Ex10l4wca5TMwd" target="_blank" rel="noreferrer">
-                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="32" height="32" alt="WhatsApp" />
+                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png" width="32" height="32" alt="WhatsApp" />
                 </a>
                 <p>WhatsApp</p>
             </div>
-                <br>
+        """, unsafe_allow_html=True)
 
+        st.markdown("""
             <div class="social-icon">
                 <a href="mailto:VedicVox.ds@rgmcet.edu.in" target="_blank" rel="noreferrer">
-                <img src="https://cdn-icons-png.flaticon.com/128/9068/9068642.png" width="32" height="32" alt="Mail" />
+                    <img src="https://cdn-icons-png.flaticon.com/128/9068/9068642.png" width="32" height="32" alt="Mail" />
                 </a>
                 <p>Mail</p>
             </div>
+        """, unsafe_allow_html=True)
 
-            </div>
-            """, unsafe_allow_html=True)
-    
-            #adding responsive map
+        st.markdown("</div>", unsafe_allow_html=True)
+
+        # Add Google Maps with terrain view
         st.markdown("""
-                <style>
-                .google-map {
+            <style>
+            .google-map {
                 padding-bottom: 50%;
                 position: relative;
             }
@@ -335,14 +335,18 @@ if app == "Contact":
                 top: 0;
                 position: absolute;
             }
-                </style>
-                """, unsafe_allow_html=True)
-        st.markdown(
-        """<div class="google-map">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.626290194635!2d78.37430737601228!3d15.504521085096089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5b49bf7e231ed%3A0xf209159e6bde969c!2sRajeev%20Gandhi%20Memorial%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1713966806295!5m2!1sen!2sin&maptype=terrain" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        """,unsafe_allow_html=True
-    )
+            </style>
+        """, unsafe_allow_html=True)
+
+        st.markdown("""
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.626290194635!2d78.37430737601228!3d15.504521085096089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5b49bf7e231ed%3A0xf209159e6bde969c!2sRajeev%20Gandhi%20Memorial%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1713966806295!5m2!1sen!2sin&maptype=terrain" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        """,unsafe_allow_html=True)
+
+       
+
+       
            
 
 hide_st_style= """
