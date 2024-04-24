@@ -282,13 +282,13 @@ if app == "Contact":
             </div>
             """, unsafe_allow_html=True)
 # hide the app icon and header red
- hide_st_style='''
- <style>
- #mainmenu {visibility:hidden;}
- footer {visibility:hidden;}
- header {visibility:hidden;}
- </style>
- '''
+ hide_st_style= """
+       <style>
+       #mainmenu {visibility:hidden;}
+       footer {visibility:hidden;}
+       header {visibility:hidden;}
+       </style>
+ """
 st.markdown(hide_st_style,unsafe_allow_html=True)
 
 
