@@ -273,7 +273,7 @@ if app == "Contact":
                 <br>
 
             <div class="social-icon">
-                <a href="mailto:amarnathsiliveri" target="_blank" rel="noreferrer">
+                <a href="mailto:VedicVox.ds@rgmcet.edu.in" target="_blank" rel="noreferrer">
                 <img src="https://cdn-icons-png.flaticon.com/128/9068/9068642.png" width="32" height="32" alt="Mail" />
                 </a>
                 <p>Mail</p>
