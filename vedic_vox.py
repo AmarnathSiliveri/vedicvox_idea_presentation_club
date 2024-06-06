@@ -3,7 +3,7 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 import time
 
-st.set_page_config(page_title="VEDIC VOX",layout="wide",page_icon="vv32.png")
+st.set_page_config(page_title="VEDIC VOX",layout="centered",page_icon="vv32.png")
 
 
 img_contact_form = Image.open("vedicvoxbg.png")
