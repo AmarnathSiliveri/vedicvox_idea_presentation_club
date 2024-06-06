@@ -33,7 +33,7 @@ if app == "Home":
     with st.container():
         
         # Create columns with specified widths
-        cols = st.columns([0.3,0.7])
+        cols = st.columns([2])
 
         # Content for the first column
         with cols[0]:
